@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Christopher Portfolio Web 🌎</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fas fa-c"></i>
+                    <div class="logo-text">Christopher</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="https://www.linkedin.com/in/christopher-joy-jaya-kumari-395ab8216/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/christopherjoyjayakumari" target="_blank">Git-hub</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="Images/Profile bg.png" alt="Christopher Profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input"></span></h5>
+                    <h1>Christopher ⚪ <br> Joy jaya kumari</h1>
+                    <p> "I'm like a web developer and computer engineer, but with a twist – my code is as clean as a new
+                        whiteboard marker. With
+                        a knack for turning tech challenges into triumphs, my portfolio is a gallery of achievements and
+                        projects that prove
+                        coding isn't just my job, it's my Passion!"</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://twitter.com/CJoyjayakumari?t=4cFix-fxWvbQpstllZQ8jg&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/christopher-joy-jaya-kumari-395ab8216/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li")
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+        var typed = new Typed(".input", {
+            strings: ["Web Developer", "Frontend Developer", "Java Developer"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
